@@ -202,10 +202,12 @@
 
 // Presence of wide character support:
 
+#ifndef gsl_HAVE_WCHAR
 #ifdef __DJGPP__
 # define gsl_HAVE_WCHAR 0
 #else
 # define gsl_HAVE_WCHAR 1
+#endif
 #endif
 
 // Presence of language & library features:
